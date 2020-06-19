@@ -87,6 +87,144 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
+   /*----------------------Base Header - Footer Styles-----------*/
+
+header, footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+   /*----------------------Base Header Styles-----------*/
+
+.header-divider{
+
+}
+
+ul header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+   /*----------------------Base Footer Styles-----------*/
+
+   .footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+   .contact{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+   }
+
+   .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+   .facebook-icon{}
+   .twitter-icon{}
+   .instagram-icon{}
+
+   .copyright{}
+
+/*----------------------mobile-body styles--------------------------*/
+
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/*--------------------home page styles-------------------------------*/
+
+.hero-area{}
+.form-description{}
+.form{}
+
+
+.features{}
+.tent-icon{}
+.features-item-tent{}
+.bed-icon{}
+.features-item-bed{}
+.utensiles-icon{}
+.features-item-utensils{}
+.feet-icon{}
+.features-item-feet{}
+.smiley-icon{}
+.features-item-smiley{}
+.wifi-icon{}
+.features-item-wifi{}
+
+
+.reviews{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.group-photo{}
+
+/*--------------------about page styles-------------------------------*/
+
+.mission{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission-content{}
+
+.map{}
+
+.contact-section{}
+
+.general-info{}
+
+.chat{}
+
+/*--------------------FAQ page styles-------------------------------*/
+
+.faq{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq-questions{}
+.faq-answers{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
