@@ -101,18 +101,41 @@ header, footer{
 
    /*----------------------Base Header Styles-----------*/
 
-.header-divider{
-
+header{
+  padding: 15px 0;
+  margin: 50px;
 }
 
-ul header{
+.header-divider{
+  width: 60%;
+}
+
+header nav ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
+}
+
+header nav{
+  width: 60%;
+}
+
+header .contact-section{
+  margin: 0;
 }
 
    /*----------------------Base Footer Styles-----------*/
+
+ footer p{
+   margin: 0;
+ }
+
+  footer .content-wrapper{
+    width: 55%;
+    margin: 50px 0;
+  }
 
    .footer-content{
     display: flex;
@@ -125,6 +148,8 @@ ul header{
     display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin:80px;
  
    }
 
@@ -148,6 +173,7 @@ ul header{
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    width:90%;
 }
 
 /*--------------------home page styles-------------------------------*/
@@ -156,8 +182,17 @@ ul header{
 .form-description{}
 .form{}
 
+.features{
+  margin: 0;
+}
 
-.features{}
+.features p{
+  margin:0;
+}
+
+.features article{
+  width: 90%;
+}
 .tent-icon{}
 .features-item-tent{}
 .bed-icon{}
@@ -171,6 +206,9 @@ ul header{
 .wifi-icon{}
 .features-item-wifi{}
 
+reviews h3{
+  width: 90%;
+}
 
 .reviews{
     display: flex;
