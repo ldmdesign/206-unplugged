@@ -96,18 +96,27 @@ header, footer{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  border: 2px solid blue;
 }
 
 
    /*----------------------Base Header Styles-----------*/
 
 header{
-  padding: 15px 0;
+  width: 220px;
+  padding: 0;
   margin: 50px;
 }
 
+header .content-wrapper{
+  margin: 0;
+
+}
+
+
 .header-divider{
-  width: 60%;
+  width: 100%;
+  border: 2px solid green;
 }
 
 header nav ul{
@@ -115,15 +124,20 @@ header nav ul{
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 100%;
+  border: 1px solid pink;
+  list-style: none;
+  margin:0;
 }
 
 header nav{
   width: 60%;
+  border: 1px solid rosybrown;
 }
 
 header .contact-section{
   margin: 0;
+  border: 1px solid brown;
 }
 
    /*----------------------Base Footer Styles-----------*/
@@ -133,31 +147,26 @@ header .contact-section{
  }
 
   footer .content-wrapper{
-    width: 55%;
-    margin: 50px 0;
+    width: 80%;
+    margin: 25px 0;
+    flex-flow:row-wrap;
   }
 
-   .footer-content{
+
+
+
+  .copyright{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-   }
-
-   .contact{
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin:80px;
+    margin:80px;
+  }
  
-   }
+   
 
    .social{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
+
    }
 
    .facebook-icon{}
@@ -173,17 +182,42 @@ header .contact-section{
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    width:90%;
+    width:80%;
+    margin: 20px;
+    border: 2px solid red;
 }
 
 /*--------------------home page styles-------------------------------*/
+.hero{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  border: 1px solid seagreen;
+}
+
+aside{
+  margin: 20px;
+  border: 1px solid plum;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+
+}
 
 .hero-area{}
 .form-description{}
 .form{}
 
 .features{
-  margin: 0;
+  margin: 20px;
+  border: 1px solid rgb(136, 136, 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features p{
@@ -191,7 +225,7 @@ header .contact-section{
 }
 
 .features article{
-  width: 90%;
+  width: 10em;
 }
 .tent-icon{}
 .features-item-tent{}
@@ -215,6 +249,8 @@ reviews h3{
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    margin: 20px;
+    border: 1px solid #b3d4fc;
 }
 .group-photo{}
 
@@ -351,16 +387,40 @@ reviews h3{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768){
+
+  .content-wrapper{
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .content-wrapper{
+    width: 640px;
+  }
+
+  header nav{
+    width: 130px;
+  }
+
+  header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header-divider {
+    display: none;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+@media only screen and (min-width: 1200){}
 
 /* ==========================================================================
    Print styles.
