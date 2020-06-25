@@ -90,6 +90,7 @@ textarea {
 .content-wrapper{
   width: 90%;
   margin: 50px 0;
+  border: 1px solid green;
 }
 
    /*----------------------Base Header - Footer Styles-----------*/
@@ -98,7 +99,9 @@ header, footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 1px solid black;
 }
 
 
@@ -141,8 +144,10 @@ header nav ul{
 
    /*----------------------Base Footer Styles-----------*/
 
+
+
  footer p{
-   margin: 0;
+   margin: auto;
  }
 
   footer .content-wrapper{
@@ -175,11 +180,14 @@ footer.social p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 10px;
 }
 
-aside .content-wrapper{
+aside.content-wrapper{
   padding: 20px;
-  border: 1px solid plum;
+  width: 800px;
+  margin: auto;
+  border: 1px solid greenyellow;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,8 +240,8 @@ reviews h3{
 }
 
 .reviews{
-  margin: 0;
-  padding: 5px;
+  margin: auto;
+  padding: 10px;
   border: 1px solid rgb(136, 136, 4);
   display: flex;
   justify-content: center;
@@ -250,7 +258,7 @@ reviews h3{
 /*--------------------about page styles-------------------------------*/
 
 .mission{
-  border: 1px solid blue;
+  border: 1px solid greenyellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,7 +291,7 @@ reviews h3{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  border: 1px solid blue;
+  border: 1px solid greenyellow;
   width: 360px;
 }
 
@@ -392,17 +400,20 @@ reviews h3{
    Modify as content requires.
    ========================================================================== */
 
+
+   /***TABLET**/
+
 @media only screen and (min-width: 768px){
 
   .content-wrapper{
     max-width: 640px;
     margin: 100px 0;
     border: 10px hidden red;
-
   }
+
 /*-------header------*/
   header{
-    border: 1px hidden blue;
+    border: 1px hidden rgb(83, 50, 50);
     width: 640px;
     display: flex;
     justify-content: space-between;
@@ -410,7 +421,7 @@ reviews h3{
   }
 
   header .content-wrapper{
-    border: 5px dotted red;
+    border: 5px dotted rgb(143, 63, 63);
     width: 640px;
     display: flex;
     justify-content: space-between;
@@ -436,44 +447,49 @@ reviews h3{
 /**Aside**/
 
   aside.content-wrapper{
-    margin: 50px 0;
+    margin: auto;
+    width: 600px;
     padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: column;
+    border: 1px solid plum;
   }
 
  .form-description, .form{
     width: 45%;
     margin: 0;
-    border: 5px dotted purple;
+    border: 5px dotted pink;
   }
 
   .features{
+    width: 640px;
+    margin: auto;
+    
+  }
+
+  .features .content-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 640px;
-    border: 5px dotted purple;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border: 5px dashed palevioletred;
   }
 
   .features article{
-    border: 5px dotted green;
+    border: 5px dotted rosybrown;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 34%;
-    flex-flow: row wrap;
-    flex-basis: auto;
-
+    align-content: start;
+    width: 200px;
+    flex-wrap: wrap;
   }
 
   /**Reviews**/
 
   .reviews article{
-    border: 5px dotted green;
+    border: 5px dotted pink;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,18 +503,28 @@ reviews h3{
   }
 
   /**Footer**/
+
+  footer{
+    width: 500px;
+    margin: auto;
+  }
+
   footer.content-wrapper {
     width: 100%;
-    margin: 100px 0;
-    border: 5px dotted red;
   }
 
   .footer-content{
-    border: 5px dotted green;
+    width: 400px;
+    margin: auto;
+    border: 5px dotted pink;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+
+  }
+  .footer.copyright{
+     width: 100%;
+  }
  
   }
 
@@ -539,21 +565,20 @@ reviews h3{
 
 .faq{
   width: 640px;
-  margin: 20px;
+  margin: auto;
+  border: 5px dashed peachpuff;
 }
 
 .faq .content-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
-    border: 5px dotted paleturquoise;
-
+    border: 5px dotted red;
   }
 
 .faq-content{
-  width: 40%;
-  flex-basis: 40%;
+  width: 290px;
   border: 1px solid brown;
 }
 
@@ -563,7 +588,89 @@ reviews h3{
 
 }
 
-@media only screen and (min-width: 1200){}
+
+/***DESKTOP***/
+
+@media only screen and (min-width: 1200px){
+
+  .content-wrapper{
+    max-width: 960px;
+    border: 1px solid slategrey;
+  }
+
+  /**Hero Area**/
+
+  .hero h1{
+    width: 100%;
+    text-align: left;
+    margin: 0 100px 0 0;
+    border: 1px solid blue;
+  }
+
+  /**Aside**/
+
+  aside.content-wrapper{
+    justify-content: space-around;
+  }
+
+  .form-description, .form{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+  }
+
+  .features h2{
+    width: 850px;
+    border: 2px dotted dodgerblue;
+  }
+
+  .features article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 1px hidden dimgrey;
+  }
+  .reviews article div{
+    width: 45%;
+  }
+
+/***about page*****/
+
+.mission h2, .contact-section .content-wrapper h2{
+  width: 100%;
+}
+
+.contact-section .content-wrapper h2{
+  margin-bottom: 75px;
+}
+
+/**FAQ**/
+
+.faq h2 {
+  width: 100%;
+}
+
+.faq-content{
+  flex-basis: auto;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Print styles.
