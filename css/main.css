@@ -87,10 +87,52 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*-----General Styles-------*/
+
+html{
+  font-size: 16px;
+  background-color: grey;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+ul, ol{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+a{
+  color: #e2e3ed;
+  text-decoration: none;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #e2e3ed;  
+  margin: 0;
+}
+h3,h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25em;
+  color: #e2e3ed;
+  font-weight: 500;
+}
+p{
+  color: #e2e3ed;
+  line-height: 1em;
+  font-weight: 400;
+}
+img{}
+figure{}
+address{
+  color: #e2e3ed;
+}
 .content-wrapper{
-  width: 90%;
-  margin: 50px 0;
-  border: 1px solid green;
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
    /*----------------------Base Header - Footer Styles-----------*/
@@ -98,10 +140,9 @@ textarea {
 header, footer{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
-  margin: auto;
-  border: 1px solid black;
+  margin: 0;
 }
 
 
@@ -109,6 +150,7 @@ header, footer{
 
 header{
   padding: 15px 0;
+  width: 360px;
 }
 
 header .content-wrapper{
@@ -117,7 +159,12 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
 
+header img{
+  width: 225px;
+  margin: 0;
+  padding: 50px;
 }
 
 .header-divider{
@@ -139,6 +186,7 @@ header nav ul{
   justify-content: space-between;
   width: 100%;
   list-style: none;
+  font-size: 1.5em;
 }
 
 
@@ -151,19 +199,31 @@ header nav ul{
  }
 
   footer .content-wrapper{
-    width: 55%;
+    width: 80%;
     margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border: 1px solid red;
   
   }
 
-footer.contact{
-  margin-bottom: 50px;
+footer .contact{
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
-footer.social p{
+footer .social{
+  text-align:center;
+}
+
+footer .icon{
   display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
   .copyright{
@@ -180,32 +240,32 @@ footer.social p{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 10px;
+  margin: 0;
+  padding: 20px 10px 325px 10px;
+  font-size: 2.25rem;
+  font-weight: 500;
+  width: 340px;
+  border: 1px solid green;
 }
 
 aside.content-wrapper{
-  padding: 20px;
-  width: 800px;
-  margin: auto;
-  border: 1px solid greenyellow;
+  width: 320px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  padding-bottom: 50px;;
 }
 
 input{
   width: 100%;
 }
 
-.hero-area{}
-.form-description{}
-.form{}
-
 .features{
   margin: 0;
-  padding: 5px;
-  border: 1px solid rgb(136, 136, 4);
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,14 +300,14 @@ reviews h3{
 }
 
 .reviews{
-  margin: auto;
-  padding: 10px;
-  border: 1px solid rgb(136, 136, 4);
+  margin: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row;
-  width: 100%;
+  width: 90%;
+  background-color: #2a423a;
 }
 
 
@@ -258,7 +318,6 @@ reviews h3{
 /*--------------------about page styles-------------------------------*/
 
 .mission{
-  border: 1px solid greenyellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,7 +470,7 @@ reviews h3{
     border: 10px hidden red;
   }
 
-/*-------header------*/
+  /*-------header------*/
   header{
     border: 1px hidden rgb(83, 50, 50);
     width: 640px;
@@ -444,7 +503,7 @@ reviews h3{
     display: none;
   }
 
-/**Aside**/
+  /**Aside**/
 
   aside.content-wrapper{
     margin: auto;
@@ -453,7 +512,7 @@ reviews h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: column;
+    flex-wrap: wrap;
     border: 1px solid plum;
   }
 
@@ -520,71 +579,71 @@ reviews h3{
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
+
   .footer.copyright{
      width: 100%;
   }
  
+
+
+  /**About page**/
+
+  .mission{
+    width: 640px;
+    padding: 20px;
   }
 
-/**About page**/
-
-.mission{
-  width: 640px;
-  padding: 20px;
-}
-
-.mission-content{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mission-content p{
-  width: 49%;
-  margin: 0;
-}
-
-.contact-section, .content-wrapper, h2{
-  width: 640px;
-  border: 1px solid fuchsia;
-  margin: 0;
-}
-
-.contact-content{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 49%;
-  flex-direction: column;
-  margin: 0;
-}
-
-/**FAQ page**/
-
-.faq{
-  width: 640px;
-  margin: auto;
-  border: 5px dashed peachpuff;
-}
-
-.faq .content-wrapper{
+  .mission-content{
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-wrap: wrap;
-    border: 5px dotted red;
+    justify-content: space-between;
+    align-items: center;
   }
 
-.faq-content{
-  width: 290px;
-  border: 1px solid brown;
-}
+  .mission-content p{
+    width: 49%;
+    margin: 0;
+  }
 
-.faq h2{
-  width: 100%;
-}
+  .contact-section, .content-wrapper, h2{
+    width: 640px;
+    border: 1px solid fuchsia;
+    margin: 0;
+  }
+
+  .contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 49%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  /**FAQ page**/
+
+  .faq{
+    width: 640px;
+    margin: auto;
+    border: 5px dashed peachpuff;
+  }
+
+  .faq .content-wrapper{
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      flex-wrap: wrap;
+      border: 5px dotted red;
+    }
+
+  .faq-content{
+    width: 290px;
+    border: 1px solid brown;
+  }
+
+  .faq h2{
+    width: 100%;
+  }
 
 }
 
