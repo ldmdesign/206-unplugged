@@ -91,7 +91,7 @@ textarea {
 
 html{
   font-size: 16px;
-  background-color: grey;
+  background-color: #1f2321;
 }
 body{
   font-family: 'Open Sans', sans-serif;
@@ -111,20 +111,29 @@ h2{
   font-size: 2rem;
   color: #e2e3ed;  
   margin: 0;
+  max-width: 400px;
 }
 h3,h4{
   font-family: 'Poppins', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.5rem;
   color: #e2e3ed;
   font-weight: 500;
+  max-width: 500px;
 }
 p{
   color: #e2e3ed;
-  line-height: 1em;
+  line-height: 1.2em;
   font-weight: 400;
+  font-size: .8rem;
 }
-img{}
-figure{}
+img{
+  width: 100%;
+}
+
+figure{
+  margin: 0;
+}
+
 address{
   color: #e2e3ed;
 }
@@ -187,10 +196,12 @@ header .content-wrapper{
   margin: 0;
 }
 
-header img{
-  width: 225px;
-  margin: 0;
-  padding: 50px;
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -230,15 +241,18 @@ header nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
-    border: 1px solid red;
-  
+    flex-flow: row wrap; 
   }
 
 footer .contact{
   margin: 0;
   width: 100%;
   text-align: center;
+  font-style: normal;
+}
+
+address{
+  font-style: normal;
 }
 
 footer .social{
@@ -271,18 +285,22 @@ footer .icon{
   font-size: 2.25rem;
   font-weight: 500;
   width: 340px;
-  border: 1px solid green;
+  background: url('../img/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+
 aside.content-wrapper{
-  width: 320px;
-  margin: 0;
+  width: 270px;
+  margin: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
-  padding-bottom: 50px;;
+  padding-bottom: 50px;
 }
 
 input{
@@ -292,11 +310,16 @@ input{
 .features{
   margin: 0;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
   width: 100%;
+  background: url('../img/rawpixel-800820-unsplash1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feature h2{
+ text-align: center;
+
 }
 
 .features p{
@@ -491,23 +514,28 @@ reviews h3{
 @media only screen and (min-width: 768px){
 
   .content-wrapper{
-    max-width: 640px;
+    max-width: 768px;
     margin: 100px 0;
-    border: 10px hidden red;
-  }
+    }
+
+    h2{
+      max-width: 500px;
+      font-size: 2rem;
+      font-weight: 500;
+      padding-left: 50px;
+      padding-top: 100px;
+    }
 
   /*-------header------*/
   header{
-    border: 1px hidden rgb(83, 50, 50);
-    width: 640px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   header .content-wrapper{
-    border: 5px dotted rgb(143, 63, 63);
-    width: 640px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -515,43 +543,60 @@ reviews h3{
   }
 
   header nav{
-    width: 50%;
+    width: 75%;
+    font-size: 1rem;
+    text-transform: capitalize;
   }
 
   header nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%
+    width: 50%;
+    font-size: 1rem;
+    text-transform: capitalize;
   }
 
   header-divider {
     display: none;
   }
 
+  /**Hero Area**/
+
+  .hero{
+    width: 100%;
+    padding: 0 0 325px 0;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
   /**Aside**/
 
   aside.content-wrapper{
-    margin: auto;
-    width: 600px;
-    padding: 20px 20px;
+    margin: 0;
+    padding: 50px;
+    width: 668px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
-    border: 1px solid plum;
+  }
+
+  aside h2{
+    font-size: 1.5rem;
+    line-height: 30px;
   }
 
  .form-description, .form{
     width: 45%;
-    margin: 0;
-    border: 5px dotted pink;
+    margin:10px;
   }
 
   .features{
-    width: 640px;
-    margin: auto;
-    
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .features .content-wrapper{
@@ -559,11 +604,10 @@ reviews h3{
     justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    border: 5px dashed palevioletred;
   }
 
+
   .features article{
-    border: 5px dotted rosybrown;
     display: flex;
     justify-content: center;
     align-content: start;
@@ -574,17 +618,25 @@ reviews h3{
   /**Reviews**/
 
   .reviews article{
-    border: 5px dotted pink;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 640px;
+    width: 768px;
     flex-flow: row wrap;
   }
 
+  .reviews h2{
+    max-width: 650px;
+  }
+
+
   .reviews article div{
-    border: 5px dotted pink;
-    width: 40%
+    width: 40%;
+    padding: 10px;
+  }
+
+  section.reviews{
+    width: 768px;
   }
 
   /**Footer**/
@@ -601,7 +653,6 @@ reviews h3{
   .footer-content{
     width: 400px;
     margin: auto;
-    border: 5px dotted pink;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -633,7 +684,6 @@ reviews h3{
 
   .contact-section, .content-wrapper, h2{
     width: 640px;
-    border: 1px solid fuchsia;
     margin: 0;
   }
 
@@ -651,7 +701,6 @@ reviews h3{
   .faq{
     width: 640px;
     margin: auto;
-    border: 5px dashed peachpuff;
   }
 
   .faq .content-wrapper{
@@ -659,12 +708,10 @@ reviews h3{
       justify-content: flex-start;
       align-content: center;
       flex-wrap: wrap;
-      border: 5px dotted red;
     }
 
   .faq-content{
     width: 290px;
-    border: 1px solid brown;
   }
 
   .faq h2{
