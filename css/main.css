@@ -382,9 +382,8 @@ reviews h3{
   line-height: 1.2rem;
 }
 
-.map{
-  width: 360px;
-}
+
+
 
 .map figure{
   width: 100%;
@@ -711,10 +710,18 @@ reviews h3{
     margin: 0;
   }
 
+  .map figure {
+    padding-bottom: 56.25%;
+  }
+
+  
+
   .contact-section, .content-wrapper, h2{
     width: 640px;
     margin: 0;
   }
+
+
 
   .contact-content{
     display: flex;
