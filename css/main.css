@@ -261,9 +261,17 @@ footer .social{
 
 footer .icon{
   display: flex;
+    width: 300px;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+}
+
+.socialicon{
+  font-size: 1.25em;
+  background-color: #527158;
+  padding: 15px 20px 15px 20px;
+  border-radius: 70px;
 }
 
   .copyright{
@@ -317,6 +325,7 @@ input{
   background-position: center;
 }
 
+
 .feature h2{
  text-align: center;
 
@@ -331,18 +340,11 @@ input{
   width: 60%;
   padding: 25px 40px;
 }
-.tent-icon{}
-.features-item-tent{}
-.bed-icon{}
-.features-item-bed{}
-.utensiles-icon{}
-.features-item-utensils{}
-.feet-icon{}
-.features-item-feet{}
-.smiley-icon{}
-.features-item-smiley{}
-.wifi-icon{}
-.features-item-wifi{}
+
+.features i{
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
 
 reviews h3{
   width: 90%;
